@@ -3,6 +3,8 @@ module com.example.clothifystore {
     requires javafx.fxml;
 
 
-    opens com.example.clothifystore to javafx.fxml;
-    exports com.example.clothifystore;
+    opens com.clothify to javafx.fxml;
+    exports com.clothify;
+    exports com.clothify.controllers;
+    opens com.clothify.controllers to javafx.fxml;
 }

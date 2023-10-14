@@ -1,4 +1,4 @@
-package com.example.clothifystore;
+package com.clothify.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

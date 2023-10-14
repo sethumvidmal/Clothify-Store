@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;assets/background.jpg&quot;); -fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clothifystore.LoginView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;assets/background.jpg&quot;); -fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clothify.controllers.LoginViewController">
    <children>
       <Pane layoutX="173.0" layoutY="54.0" prefHeight="292.0" prefWidth="254.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 12;">
          <children>

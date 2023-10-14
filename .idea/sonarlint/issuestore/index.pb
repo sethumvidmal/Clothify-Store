@@ -9,3 +9,5 @@ m
 =src/main/java/com/example/clothifystore/RegistrationView.java,a\1\a1640b2098a496bca037a05460cd72796e535f4c
 a
 1src/main/java/com/example/clothifystore/Main.java,f\e\fecb583c097a8ce6a9b1cc5b5719b7380e82ef89
+N
+src/main/java/module-info.java,1\c\1c89a5491fbfda3fb050196d6a239f20200296e7

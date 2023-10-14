@@ -1,4 +1,4 @@
-package com.example.clothifystore;
+package com.clothify;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

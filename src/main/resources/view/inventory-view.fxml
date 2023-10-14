@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.InventoryView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clothify.controllers.InventoryViewController">
    <children>
       <JFXButton layoutX="32.0" layoutY="51.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
          <font>
