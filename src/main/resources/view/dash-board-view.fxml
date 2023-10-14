@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DashBoardView">
+   <children>
+      <Pane layoutX="40.0" layoutY="20.0" prefHeight="360.0" prefWidth="520.0" style="-fx-background-radius: 12; -fx-background-color: #e4e4e4;">
+         <children>
+            <JFXButton layoutX="444.0" layoutY="319.0" style="-fx-background-color: red;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton layoutX="64.0" layoutY="35.0" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="64.0" layoutY="81.0" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="66.0" layoutY="129.0" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Employees" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="66.0" layoutY="175.0" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Supplies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="64.0" layoutY="225.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="277.0" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Sales return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="63.0" layoutY="327.0" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #689f38; -fx-padding: 7;" text="Sales reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
