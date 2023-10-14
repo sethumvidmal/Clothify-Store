@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.InventoryView">
    <children>
       <JFXButton layoutX="32.0" layoutY="51.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
@@ -68,7 +67,7 @@
             </JFXButton>
             <JFXTreeTableView layoutX="106.0" layoutY="229.0" prefHeight="124.0" prefWidth="458.0" style="-fx-border-radius: 12;">
                <columns>
-                  <TreeTableColumn prefWidth="43.20001220703125" text="T-shirt" />
+                  <TreeTableColumn prefWidth="43.20001220703125" text="Item" />
                   <TreeTableColumn prefWidth="72.800048828125" text="Type" />
                   <TreeTableColumn prefWidth="70.4000244140625" text="Unit price" />
                   <TreeTableColumn prefWidth="70.39996337890625" text="Size" />

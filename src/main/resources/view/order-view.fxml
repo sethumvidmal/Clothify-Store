@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="453.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.OrderView">
+   <children>
+      <Pane layoutX="14.0" layoutY="18.0" prefHeight="421.0" prefWidth="572.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 12;" />
+      <JFXButton layoutX="32.0" layoutY="51.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="100.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="31.0" layoutY="148.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="197.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="31.0" layoutY="248.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="111.0" layoutY="202.0" prefHeight="27.0" prefWidth="108.0" style="-fx-background-color: red;" text="Remove order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="321.0" layoutY="202.0" style="-fx-background-color: #607d8b;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="235.0" layoutY="203.0" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: royalblue;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTreeTableView layoutX="116.0" layoutY="262.0" prefHeight="126.0" prefWidth="458.0" style="-fx-border-radius: 12;">
+         <columns>
+            <TreeTableColumn prefWidth="63.20001220703125" text="Item" />
+            <TreeTableColumn prefWidth="74.4000244140625" text="Type" />
+            <TreeTableColumn prefWidth="75.199951171875" text="Unit price" />
+            <TreeTableColumn prefWidth="76.79998779296875" text="Size" />
+            <TreeTableColumn prefWidth="62.4000244140625" text="Discount" />
+            <TreeTableColumn prefWidth="42.39996337890625" text="Qty" />
+            <TreeTableColumn prefWidth="75.0" text="Total" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton layoutX="379.0" layoutY="203.0" style="-fx-background-color: blue;" text="Add  to cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField layoutX="116.0" layoutY="43.0" prefHeight="26.0" prefWidth="98.0" promptText="Customer name" />
+      <JFXTextField layoutX="116.0" layoutY="82.0" prefHeight="26.0" prefWidth="98.0" promptText="Contact" />
+      <JFXTextField layoutX="116.0" layoutY="120.0" prefHeight="26.0" prefWidth="98.0" promptText="E-mail" />
+      <JFXTextField layoutX="116.0" layoutY="155.0" prefHeight="26.0" prefWidth="98.0" promptText="Date" />
+      <JFXTextField layoutX="340.0" layoutY="43.0" prefHeight="26.0" prefWidth="78.0" promptText="Item code" />
+      <JFXComboBox layoutX="473.0" layoutY="43.0" promptText="Select item" />
+      <JFXTextField layoutX="340.0" layoutY="83.0" prefHeight="26.0" prefWidth="98.0" promptText="Description" />
+      <JFXTextField layoutX="474.0" layoutY="87.0" prefHeight="26.0" prefWidth="66.0" promptText="Qty" />
+      <JFXTextField layoutX="340.0" layoutY="121.0" prefHeight="26.0" prefWidth="101.0" promptText="Selling price" />
+      <JFXTextField layoutX="472.0" layoutY="120.0" prefHeight="26.0" prefWidth="101.0" promptText="Type" />
+      <JFXTextField layoutX="340.0" layoutY="156.0" prefHeight="26.0" prefWidth="108.0" promptText="Size" />
+      <JFXButton layoutX="479.0" layoutY="404.0" style="-fx-background-color: royalblue;" text="Place order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="50.0" layoutY="408.0" text="Total = " textFill="#464646">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="408.0" text="Discount = " textFill="#464646">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="408.0" text="Balance = " textFill="#464646">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
