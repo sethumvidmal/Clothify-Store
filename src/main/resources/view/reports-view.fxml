@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clothify.controllers.ReportsViewController">
    <children>
       <Pane layoutX="13.0" layoutY="18.0" prefHeight="364.0" prefWidth="574.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 12;">
@@ -43,27 +42,27 @@
             </JFXButton>
          </children>
       </Pane>
-      <JFXButton layoutX="32.0" layoutY="51.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
+      <JFXButton fx:id="btnHome" layoutX="32.0" layoutY="51.0" onAction="#btnHomeOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="32.0" layoutY="100.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Order" textFill="WHITE">
+      <JFXButton fx:id="btnOrder" layoutX="32.0" layoutY="100.0" onAction="#btnOrderOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Order" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="31.0" layoutY="148.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Item" textFill="WHITE">
+      <JFXButton fx:id="btnItem" layoutX="31.0" layoutY="148.0" onAction="#btnItemOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Item" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="32.0" layoutY="197.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Supplier" textFill="WHITE">
+      <JFXButton fx:id="btnSupplier" layoutX="32.0" layoutY="197.0" onAction="#btnSupplierOnAction" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="31.0" layoutY="248.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Reports" textFill="WHITE">
+      <JFXButton fx:id="btnReports" layoutX="31.0" layoutY="248.0" onAction="#btnReports" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Reports" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

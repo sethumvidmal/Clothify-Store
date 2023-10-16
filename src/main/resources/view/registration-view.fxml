@@ -13,32 +13,32 @@
    <children>
       <Pane layoutX="69.0" layoutY="27.0" prefHeight="345.0" prefWidth="474.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 12;">
          <children>
-            <JFXTextField layoutX="50.0" layoutY="74.0" promptText="Admin user name" />
+            <JFXTextField fx:id="txtUserName" layoutX="50.0" layoutY="74.0" promptText="Admin user name" />
             <Label layoutX="185.0" layoutY="14.0" text="Registration" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <JFXTextField layoutX="209.0" layoutY="74.0" promptText="Admin password" />
-            <JFXButton layoutX="383.0" layoutY="74.0" onAction="#btnCheck" style="-fx-background-color: green;" text="Check" textFill="WHITE">
+            <JFXTextField fx:id="txtPassword" layoutX="209.0" layoutY="74.0" promptText="Admin password" />
+            <JFXButton fx:id="btnCheck" layoutX="383.0" layoutY="74.0" onAction="#btnCheckOnAction" style="-fx-background-color: green;" text="Check" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXCheckBox layoutX="209.0" layoutY="118.0" text="Show password" />
-            <JFXTextField layoutX="50.0" layoutY="160.0" promptText="OTP" />
-            <JFXButton layoutX="211.0" layoutY="160.0" style="-fx-background-color: royalblue;" text="Send" textFill="WHITE">
+            <JFXCheckBox fx:id="showPassword" layoutX="209.0" layoutY="118.0" onAction="#showPasswordOnAction" text="Show password" />
+            <JFXTextField fx:id="txtOTP" layoutX="50.0" layoutY="160.0" promptText="OTP" />
+            <JFXButton fx:id="btnSend" layoutX="211.0" layoutY="160.0" onAction="#btnSendOnAction" style="-fx-background-color: royalblue;" text="Send" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXComboBox layoutX="316.0" layoutY="161.0" />
-            <JFXTextField layoutX="50.0" layoutY="221.0" promptText="New user name" />
-            <JFXTextField layoutX="209.0" layoutY="221.0" promptText="Password" />
-            <JFXCheckBox layoutX="356.0" layoutY="225.0" text="Show password" />
-            <JFXTextField layoutX="50.0" layoutY="281.0" promptText="Email" />
-            <JFXTextField layoutX="209.0" layoutY="281.0" promptText="Confirm password" />
-            <JFXButton layoutX="372.0" layoutY="281.0" style="-fx-background-color: #ad8f3c;" text="Back" textFill="WHITE">
+            <JFXComboBox fx:id="cmboUserType" layoutX="316.0" layoutY="161.0" onAction="#cmboUserTypeOnAction" />
+            <JFXTextField fx:id="txtNewUserName" layoutX="50.0" layoutY="221.0" promptText="New user name" />
+            <JFXTextField fx:id="txtNewUserPassword" layoutX="209.0" layoutY="221.0" promptText="Password" />
+            <JFXCheckBox fx:id="newUserShowPassword" layoutX="356.0" layoutY="225.0" onAction="#newUserShowPasswordOnAction" text="Show password" />
+            <JFXTextField fx:id="txtEmail" layoutX="50.0" layoutY="281.0" promptText="Email" />
+            <JFXTextField fx:id="txtConfirmPassword" layoutX="209.0" layoutY="281.0" promptText="Confirm password" />
+            <JFXButton fx:id="btnBack" layoutX="372.0" layoutY="281.0" onAction="#btnBackOnAction" style="-fx-background-color: #ad8f3c;" text="Back" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>

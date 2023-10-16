@@ -14,63 +14,63 @@
    <children>
       <Pane layoutX="13.0" layoutY="18.0" prefHeight="364.0" prefWidth="574.0" style="-fx-background-color: #e4e4e4; -fx-background-radius: 12;">
          <children>
-            <JFXButton layoutX="22.0" layoutY="41.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
+            <JFXButton fx:id="btnHome" layoutX="22.0" layoutY="41.0" onAction="#btnHomeOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Home" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="22.0" layoutY="90.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Order" textFill="WHITE">
+            <JFXButton fx:id="btnOrder" layoutX="22.0" layoutY="90.0" onAction="#btnOrderOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Order" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="21.0" layoutY="138.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Item" textFill="WHITE">
+            <JFXButton fx:id="btnItem" layoutX="21.0" layoutY="138.0" onAction="#btnItemOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Item" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="22.0" layoutY="187.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Supplier" textFill="WHITE">
+            <JFXButton fx:id="btnSupplier" layoutX="22.0" layoutY="187.0" onAction="#btnSupplierOnAction" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Supplier" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="21.0" layoutY="238.0" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Reports" textFill="WHITE">
+            <JFXButton fx:id="btnReports" layoutX="21.0" layoutY="238.0" onAction="#btnReportsOnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: royalblue; -fx-padding: 7;" text="Reports" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXTextField layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="72.0" promptText="Sup_id" />
-            <JFXComboBox layoutX="110.0" layoutY="94.0" />
-            <JFXTextField layoutX="206.0" layoutY="94.0" prefHeight="25.0" prefWidth="99.0" promptText="Name" />
-            <JFXTextField layoutX="110.0" layoutY="142.0" prefHeight="25.0" prefWidth="110.0" promptText="NIC" />
-            <DatePicker layoutX="351.0" layoutY="45.0" promptText="DOB" />
-            <JFXTextField layoutX="351.0" layoutY="77.0" promptText="Contact" />
-            <JFXTextField layoutX="351.0" layoutY="111.0" promptText="Bank account no" />
-            <JFXTextField layoutX="351.0" layoutY="155.0" promptText="Bank branch" />
-            <JFXTextField layoutX="110.0" layoutY="183.0" promptText="Search here" />
-            <JFXButton layoutX="501.0" layoutY="207.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: green;" text="Print" textFill="WHITE">
+            <JFXTextField fx:id="txtSupId" layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="72.0" promptText="Sup_id" />
+            <JFXComboBox fx:id="cmboTitle" layoutX="110.0" layoutY="94.0" onAction="#cmboTitleOnAction" />
+            <JFXTextField fx:id="txtName" layoutX="206.0" layoutY="94.0" prefHeight="25.0" prefWidth="99.0" promptText="Name" />
+            <JFXTextField fx:id="txtNic" layoutX="110.0" layoutY="142.0" prefHeight="25.0" prefWidth="110.0" promptText="NIC" />
+            <DatePicker fx:id="txtDob" layoutX="351.0" layoutY="45.0" promptText="DOB" />
+            <JFXTextField fx:id="txtContact" layoutX="351.0" layoutY="77.0" promptText="Contact" />
+            <JFXTextField fx:id="txtBankAccount" layoutX="351.0" layoutY="111.0" promptText="Bank account no" />
+            <JFXTextField fx:id="txtBankBranch" layoutX="351.0" layoutY="155.0" promptText="Bank branch" />
+            <JFXTextField fx:id="txtSearch" layoutX="110.0" layoutY="183.0" promptText="Search here" />
+            <JFXButton fx:id="btnPrint" layoutX="501.0" layoutY="207.0" onAction="#btnPrintOnAction" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: green;" text="Print" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="501.0" layoutY="242.0" style="-fx-background-color: #607d8b;" text="Clear" textFill="WHITE">
+            <JFXButton fx:id="btnClear" layoutX="501.0" layoutY="242.0" onAction="#btnClearOnAction" style="-fx-background-color: #607d8b;" text="Clear" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="501.0" layoutY="279.0" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: royalblue;" text="Save" textFill="WHITE">
+            <JFXButton fx:id="btnSave" layoutX="501.0" layoutY="279.0" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="49.0" style="-fx-background-color: royalblue;" text="Save" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </JFXButton>
-            <JFXTreeTableView layoutX="106.0" layoutY="229.0" prefHeight="124.0" prefWidth="386.0" style="-fx-border-radius: 12;">
+            <JFXTreeTableView layoutX="94.0" layoutY="217.0" prefHeight="124.0" prefWidth="386.0" style="-fx-border-radius: 12;">
                <columns>
-                  <TreeTableColumn prefWidth="43.20001220703125" text="Id" />
-                  <TreeTableColumn prefWidth="72.800048828125" text="NIC &amp; DOB" />
-                  <TreeTableColumn prefWidth="70.4000244140625" text="Addess" />
-                  <TreeTableColumn prefWidth="70.39996337890625" text="Contact" />
-                  <TreeTableColumn prefWidth="55.2000732421875" text="Acc no." />
-                  <TreeTableColumn prefWidth="75.20001220703125" text="Branch" />
+                  <TreeTableColumn fx:id="columnId" prefWidth="43.20001220703125" text="Id" />
+                  <TreeTableColumn fx:id="columnNic" prefWidth="72.800048828125" text="NIC &amp; DOB" />
+                  <TreeTableColumn fx:id="columnAddress" prefWidth="70.4000244140625" text="Addess" />
+                  <TreeTableColumn fx:id="columnContact" prefWidth="70.39996337890625" text="Contact" />
+                  <TreeTableColumn fx:id="columnAccNo" prefWidth="55.2000732421875" text="Acc no." />
+                  <TreeTableColumn fx:id="columnBranch" prefWidth="75.20001220703125" text="Branch" />
                </columns>
             </JFXTreeTableView>
          </children>
