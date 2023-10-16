@@ -1,3 +1,6 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(œ§ÛÇøÿÿÿÿ
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(üÏê´ùÿÿÿÿ8ö®é·³1
+ž
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°Ý™¿8ö®é·³1
+G	java:S106'"+Replace this use of System.out by a logger.(ÝÝæÒ8ÊÄê·³1
