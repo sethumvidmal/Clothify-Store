@@ -55,8 +55,12 @@ public class LoginViewController {
     }
 
     @FXML
-    void lblForgotOnAction(MouseEvent event) {
-        System.out.println("Forgot password clicked");
+    void lblForgotOnAction(MouseEvent event) throws IOException {
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/view/forgot-password-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

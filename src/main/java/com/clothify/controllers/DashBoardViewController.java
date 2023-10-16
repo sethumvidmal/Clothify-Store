@@ -1,3 +1,7 @@
+/**
+ * Sample Skeleton for 'dash-board-view.fxml' Controller Class
+ */
+
 package com.clothify.controllers;
 
 import com.clothify.Main;
@@ -13,29 +17,26 @@ import java.io.IOException;
 
 public class DashBoardViewController {
 
-    @FXML
-    private JFXButton btnEmployees;
+    @FXML // fx:id="btnEmployees"
+    private JFXButton btnEmployees; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnItem;
+    @FXML // fx:id="btnItem"
+    private JFXButton btnItem; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnLogout;
+    @FXML // fx:id="btnLogout"
+    private JFXButton btnLogout; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnOrder;
+    @FXML // fx:id="btnOrderDetails"
+    private JFXButton btnOrderDetails; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnOrderDetails;
+    @FXML // fx:id="btnSalesReport"
+    private JFXButton btnSalesReport; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnSalesReport;
+    @FXML // fx:id="btnSalesReturn"
+    private JFXButton btnSalesReturn; // Value injected by FXMLLoader
 
-    @FXML
-    private JFXButton btnSalesReturn;
-
-    @FXML
-    private JFXButton btnSupplies;
+    @FXML // fx:id="btnSupplies"
+    private JFXButton btnSupplies; // Value injected by FXMLLoader
 
     @FXML
     void btnEmployeesOnAction(ActionEvent event) throws IOException {
@@ -71,11 +72,6 @@ public class DashBoardViewController {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
-    }
-
-    @FXML
-    void btnOrderOnAction(ActionEvent event) {
-
     }
 
     @FXML
