@@ -1,4 +1,4 @@
-package com.clothify.controllers.db;
+package com.clothify.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
