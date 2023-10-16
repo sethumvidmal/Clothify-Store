@@ -4,13 +4,25 @@
 
 package com.clothify.controllers;
 
+import com.clothify.Main;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class LoginViewController {
+/*    private Stage loginStage;
+
+    public void setStage (Stage stage){
+        loginStage=stage;
+    }*/
 
     @FXML // fx:id="btnLogin"
     private JFXButton btnLogin; // Value injected by FXMLLoader
@@ -25,13 +37,21 @@ public class LoginViewController {
     private JFXTextField txtUserName; // Value injected by FXMLLoader
 
     @FXML
-    void btnLoginOnAction(ActionEvent event) {
-
+    void btnLoginOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/view/dash-board-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void btnSignUpOnAction(ActionEvent event) {
-
+    void btnSignUpOnAction(ActionEvent event) throws IOException {
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/view/registration-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
